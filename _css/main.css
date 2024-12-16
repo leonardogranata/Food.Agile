@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+
+body {
+    font-family: 'Quattrocento', serif;
+    background: linear-gradient(180deg,#000000,#9E2A2A);
+}
+
+* {
+  transition: 0.2s all;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1vh;
+  background-color:#000000;
+
+}
+
+header img {
+    border-radius: 50%;
+    z-index: 100;
+    width: 27vh;
+}
+
+header p {
+  font-size: 1.8vh;
+  font-family: "Quatrocentto";
+  margin-top: 0vh;
+  font-family: 'Quattrocento', serif;
+
+}
+
+header a{
+  text-decoration: none;
+  color: #ffff;
+  margin-top: 1vh;
+  vertical-align:text-bottom  ;
+}
+
+header a:hover {
+  color: #ffd000;
+}
+
+.logo img{
+  width: 10vh;  
+  padding: 1vh;
+  border-radius: 3vh;
+}
+
+.pizza img {
+    width: 100%;
+}
+
+.texto {
+    position: absolute;
+    top: 80%;
+    left: 14%;
+    transform: translate(-20%, -50%);
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    font-size: 9vh;
+    font-weight: bold;
+    font-family: Quattrocento;
+}
+
+  .outrotexto {
+    position: absolute;
+    top: 100%;
+    left: 58%;
+    transform: translate(-20%, -50%);
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    font-size: 6vh;
+    font-weight: 100000;
+    font-family: 'Quattrocento', serif;
+  }
+
+  .texto, .outrotexto {
+    background-color: rgba(0,0,0, 0.7);
+  } 
+
+  footer {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh;
+  }
+
+  footer img {
+    width: 5vh;
+    height: 5vh;
+}
+
+footer p {
+    margin-top: 3%;
+    color: #ffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    width: 100%;
+    max-width: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .image {
+    margin: 1vh;
+    width: calc(33.33% - 2vh);
+    height: auto;
+    overflow: hidden;
+    border-radius: 3vh #fff;
+    padding: 3vh #fff;
+    display: block;
+
+  }
+
+  .image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+    border-radius: 3vh #fff;
+    margin-bottom: 5vh;
+  }
+
+  .image:hover img {
+    transform: scale(1.1);
+  }
+
+
+  
+  @media screen and (max-width: 48vh) {
+    .image {
+      width: 100%;
+    }
+  }
+.f p {
+    font-size: 9vh;
+    color:#fff;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+footer p {
+  font-family: 'Quattrocento', serif;
+  font-size: 1.5vh;
+}
+
+.direitos {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  align-items: center;
+}

@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+
+/* Resetando algumas margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.2s all;
+}
+
+/* Estilo geral da página */
+body {
+    background-color: #000000;
+    font-family: 'Quattrocento', serif;
+    text-align: center;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 1vh;
+    background-color:#000000;
+}
+
+header img {
+    border-radius: 50%;
+    width: 20vh;
+    z-index: 100;
+}
+
+header p {
+    font-size: 2vh;
+    margin-top: 10vh;
+    font-family: 'Quattrocento', serif;
+}
+
+header a {
+    text-decoration: none;
+    margin-top: 5vh;
+    color: #ffff;
+    font-family: 'Quattrocento', serif;
+    vertical-align: baseline;
+}
+
+header a:hover {
+    color: #ffd000;
+}
+
+
+/* Estilo do header */
+.Titulo{
+    background-color: #000000;
+    color: white;
+    padding: 2vh;
+    border-radius: 0.5vh;
+    font-size: 2vh;
+}
+
+/* Contêiner do cardápio */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(28vh, 1fr));
+    gap: 2vh;
+    margin-top: 2vh;
+}
+
+/* Estilo de cada card de pizza */
+.card {
+    background-color: white;
+    border: 0.1vh solid #ddd;
+    border-radius: 0.8vh;
+    overflow: hidden;
+    box-shadow: 0 0.4vh 0.8vh rgba(0, 0, 0, 0.1);
+    padding: 1vh;
+    text-align: center;
+    transition: transform 0.3s ease;
+    height: 43vh;
+}
+
+/* Efeito de hover nos cards */
+.card:hover {
+    transform: translateY(-1vh);
+}
+
+/* Imagem da pizza */
+.card img {
+    width: 100%;
+    height: 18vh;
+    object-fit: cover;
+    border-radius: 0.5vh;
+}
+
+/* Título da pizza */
+.card h2 {
+    margin-top: 1vh;
+    font-size: 2vh;
+}
+
+/* Preço da pizza */
+.card .price {
+    font-size: 2vh;
+    color: #ff6347;
+    margin-top: 1vh;
+}
+
+.card button {
+    width: 15vh;
+}
+
+/* Descrição da pizza */
+.card p {
+    font-size: 1.4vh;
+    color: #555;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+/* Estilo do carrinho */
+.carrinho {
+    margin-top: 3vh;
+    background-color: #fff;
+    padding: 2vh;
+    border-radius: 0.8vh;
+    box-shadow: 0 0.4vh 0.8vh rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo da lista de itens no carrinho */
+#itens-carrinho {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilo do item no carrinho */
+#itens-carrinho li {
+    margin-bottom: 1vh;
+}
+
+/* Total do carrinho */
+#total {
+    font-size: 3vh;
+    font-weight: bold;
+    margin-top: 2vh;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 1vh;
+    font-family: 'Quattrocento', serif;
+
+  }
+
+  footer img {
+    width: 5vh;
+    height: 5vh;
+}
+
+footer p {
+    margin-top: 3vh;
+    color: #ffff;
+    font-size: 1.5vh;
+}
+
+#ifood {
+    width: 7vh;
+}
+
+button {
+    background-color: #9e2a2a; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto em branco */
+    border: none; /* Remove a borda */
+    padding: 1vh 2vh; /* Espaçamento interno */
+    font-size: 1.6vh; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    border-radius: 0.5vh; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Animação suave na mudança de cor */
+}
+  
+button:hover {
+    background-color: #7f1f1f; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+h2 {
+    font-size: 3.5vh;
+}
+
+li {
+    font-size: 2vh;
+}
+
+p {
+    font-size: 2vh;
+}

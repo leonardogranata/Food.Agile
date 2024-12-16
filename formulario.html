@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Food Agile - Contato</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/_css/formulario.css'>
+    <script src='/_js/main.js'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="imagex/png" href="/_imagens/logomodoclaro.png">
+</head>
+<body>
+    <header>
+        <a href="galeria.html">
+        <p>Galeria</p>
+        </a>
+
+        <a href="formulario.html">
+        <p>Contato</p>
+        </a>
+
+        <a href="index.html">
+            <img src="/_imagens/logomodoclaro.png">
+        </a>
+
+        <a href="cardapio.html">
+        <p>Cardápio</p>
+        </a>
+
+        <a href="quemSomos.html">
+        <p>Quem Somos</p>
+        </a>
+    </header>
+
+    <div class="page">
+        <form action="validarCastro.hmtl" id="formulario" onsubmit="validarCadastro()">
+            <h1 id="titulo">Contato</h1>
+            <br>
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome:"> 
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                
+                <div class="observacoes">
+                    <label for="observacoes">Observações:</label> <br>
+                    <textarea id="observacoes" placeholder="Escreva sua mensagem"></textarea>
+                </div> <br>
+            
+            <button id='btn'type="submit" onclick="gerarJSON()">Enviar</button>               
+            
+        </form>
+    </div>
+
+    <footer>
+        <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dpt_BR">
+            <img src="/_imagens/facebook-new.png">
+        </a>
+        <a href="https://www.instagram.com/">
+            <img src="/_imagens/instagram-new.png">
+        </a>
+        <div class="direitos">
+            <p>2010 - 2024 © Todos os direitos reservados.</p>
+        </div>
+        <a href="https://www.whatsapp.com/?lang=pt_BR">
+            <img src="./_imagens/whatsapp.png">
+        </a>
+        <a href="https://www.ifood.com.br/">
+            <img src="/_imagens/ifood-logo-01.png">
+        </a>
+    </footer>
+
+</body>
+</html>

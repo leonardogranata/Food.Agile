@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+* {
+    margin: 0;
+    /* Remove as margens padrão de todos os elementos */
+    padding: 0;
+    /* Remove o preenchimento padrão de todos os elementos */
+    transition: 0.2s linear;
+    /* Adiciona uma transição suave de 0.2s para mudanças nos elementos */
+}
+
+body {
+    background: linear-gradient(180deg,#000000,#9E2A2A);
+    background-repeat: no-repeat;
+    font-family: 'Quattrocento', serif;
+}
+
+/* Definindo o layout flexível para o container */
+.container {
+    display: flex;
+    /* Usa flexbox para organizar os elementos */
+    flex-direction: column;
+    /* Alinha os elementos verticalmente */
+    min-height: 100vh;
+    /* Garante que a altura mínima do contêiner seja 100% da altura da janela */
+}
+
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color:#000000;
+}
+header img {
+    border-radius: 50%;
+    width: 20vh;
+    z-index: 100;
+}
+
+header p {
+    font-size: 2vh;
+    margin-top: 10vh;
+    font-family: 'Quattrocento', serif;
+}
+
+header a{
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Quattrocento', serif;
+}
+header a:hover {
+    color: #ffd000;
+}
+
+
+
+main {
+    min-height: 80vh;
+}
+
+.main {
+    width: 70%;
+    margin: auto;
+}
+
+footer {
+    background-color: #000;
+}
+
+.galeria {
+    background-color: #000;
+    /* Define o fundo da galeria como preto */
+    border-radius: 15px;
+    /* Adiciona bordas arredondadas à galeria */
+    margin: 150px auto;
+    /* Adiciona uma margem superior e centraliza a galeria horizontalmente */
+    display: grid;
+    /* Usa o layout grid para organizar os itens da galeria */
+    grid-template-columns: repeat(13, 1fr);
+    /* Cria 13 colunas de tamanho igual */
+    grid-template-rows: repeat(6, auto);
+    /* Cria 6 linhas com altura automática */
+    gap: 20px;
+    /* Adiciona um espaçamento de 20px entre os itens da galeria */
+    padding: 40px;
+    /* Adiciona um espaçamento interno de 40px ao redor da galeria */
+}
+
+.item-galeria {
+    overflow: hidden;
+    /* Garante que o conteúdo que ultrapasse o limite do contêiner seja oculto */
+    position: relative;
+    /* Define uma posição relativa, útil para elementos posicionados dentro */
+}
+
+.item-galeria img {
+    width: 100%;
+    /* A imagem ocupará 100% da largura do contêiner */
+    height: 100%;
+    /* A imagem ocupará 100% da altura do contêiner */
+    object-fit: cover;
+    /* Garante que a imagem se ajuste ao contêiner, mantendo suas proporções */
+    position: relative;
+    /* Define a imagem com posição relativa para manipulações posteriores */
+}
+
+/* Definindo a posição dos itens da galeria na grade */
+.item01 {
+    grid-column: 1 / span 5;
+    /* O item 1 ocupa 5 colunas a partir da primeira */
+    grid-row: 1 / span 5;
+    /* O item 1 ocupa 5 linhas a partir da primeira */
+}
+
+.item02 {
+    grid-column: 6 / span 3;
+    /* O item 2 ocupa 3 colunas a partir da sexta */
+    grid-row: 1 / span 3;
+    /* O item 2 ocupa 3 linhas a partir da primeira */
+}
+
+.item03 {
+    grid-column: 9 / span 3;
+    /* O item 3 ocupa 3 colunas a partir da nona */
+    grid-row: 1 / span 3;
+    /* O item 3 ocupa 3 linhas a partir da primeira */
+}
+
+.item04 {
+    grid-column: 12 / span 3;
+    /* O item 4 ocupa 3 colunas a partir da 12ª */
+    grid-row: 1 / span 5;
+    /* O item 4 ocupa 5 linhas a partir da primeira */
+}
+
+.item05 {
+    grid-column: 1 / span 5;
+    /* O item 5 ocupa 5 colunas a partir da primeira */
+    grid-row: 6 / span 1.5;
+    /* O item 5 ocupa 1.5 linhas a partir da sexta */
+}
+
+.item06 {
+    grid-column: 6 / span 3;
+    /* O item 6 ocupa 3 colunas a partir da sexta */
+    grid-row: 4 / span 2;
+    /* O item 6 ocupa 2 linhas a partir da quarta */
+}
+
+.item07 {
+    grid-column: 9 / span 3;
+    /* O item 7 ocupa 3 colunas a partir da nona */
+    grid-row: 4 / span 2;
+    /* O item 7 ocupa 2 linhas a partir da quarta */
+}
+
+.item08 {
+    grid-column: 6 / span 5;
+    /* O item 8 ocupa 5 colunas a partir da sexta */
+    grid-row: 7.5 / span 1.5;
+    /* O item 8 ocupa 1.5 linhas a partir da linha 7.5 */
+}
+
+.item09 {
+    grid-column: 11 / span 4;
+    /* O item 9 ocupa 4 colunas a partir da 11ª */
+    grid-row: 9 / span 1.2;
+    /* O item 9 ocupa 1.2 linhas a partir da nona */
+}
+
+.item-galeria {
+    border-radius: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+.item-galeria img:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* FOOTER */
+footer {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    font-family: 'Quattrocento', serif;
+  }
+
+  footer img {
+    width: 5vh;
+    height: 5vh;
+    margin-top: 2.5vh;
+}
+
+footer p {
+    margin-top: 5vh;
+    color: #ffff;
+    font-size: 1.5vh;
+    margin-bottom: 5vh;
+}
+
+#ifood {
+    width: 7vh;
+}
+
+* {
+    transition: 0.2s all;
+  }

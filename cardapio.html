@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Agile - Cardápio da Pizzaria</title>
+    <link rel="stylesheet" href="/_css/cardapio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="imagex/png" href="/_imagens/logomodoclaro.png">
+</head>
+<body>
+    <header>
+        <a href="galeria.html">
+            <p>Galeria</p>
+        </a>
+
+        <a href="formulario.html">
+            <p>Contato</p>
+        </a>
+        <a href="index.html">
+        <img src="/_imagens/logomodoclaro.png">
+        </a>
+
+        <a href="cardapio.html">
+            <p>Cardápio</p>
+        </a>
+
+        <a href="quemSomos.html">
+            <p>Quem Somos</p>
+        </a>
+    </header>
+
+    <div class="Titulo">
+        <h1>Cardápio da Pizzaria Deliciosa</h1>
+    </div>
+    <div id="menu-container" class="menu-container">
+        <!-- Cards de pizza -->
+        <div class="card">
+            <img src="/_imagens/1.jfif" alt="Pizza Margherita">
+            <h2>Margherita</h2>
+            <div class="price">R$ 35,00</div>
+            <p>Clássica pizza italiana com molho de tomate, mussarela e manjericão.</p>
+            <button onclick="adicionarCarrinho('Margherita', 35)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+            <img src="/_imagens/2.jfif" alt="Pizza Pepperoni">
+            <h2>Pepperoni</h2>
+            <div class="price">R$ 40,00</div>
+            <p>Pizza coberta com fatias finas de pepperoni e queijo.</p>
+            <button onclick="adicionarCarrinho('Pepperoni', 40)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+            <img src="/_imagens/3.jfif" alt="Pizza Quatro Queijos">
+            <h2>Quatro Queijos</h2>
+            <div class="price">R$ 45,00</div>
+            <p>Uma mistura de queijos deliciosos: mussarela, gorgonzola, parmesão e provolone.</p>
+            <button onclick="adicionarCarrinho('Quatro Queijos', 45)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+            <img src="/_imagens/4.jfif" alt="Pizza Frango com Catupiry">
+            <h2>Frango com Catupiry</h2>
+            <div class="price">R$ 38,00</div>
+            <p>Pizza cremosa com frango desfiado e requeijão cremoso.</p>
+            <button onclick="adicionarCarrinho('Frango com Catupiry', 38)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+            <img src="/_imagens/5.jfif" alt="Pizza Calabresa">
+            <h2>Calabresa</h2>
+            <div class="price">R$ 36,00</div>
+            <p>Pizza com calabresa picante, cebola e azeitonas.</p>
+            <button onclick="adicionarCarrinho('Calabresa', 36)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+            <img src="/_imagens/6.jfif" alt="Pizza Portuguesa">
+            <h2>Portuguesa</h2>
+            <div class="price">R$ 42,00</div>
+            <p>Azeitonas, presunto, ovos e cebolas.</p>
+            <button onclick="adicionarCarrinho('Portuguesa', 42)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+            <img src="/_imagens/7.jfif" alt="Pizza Vegetariana">
+            <h2>Vegetariana</h2>
+            <div class="price">R$ 39,00</div>
+            <p>Molho de tomate, queijo, cogumelos, pimentões e abobrinha.</p>
+            <button onclick="adicionarCarrinho('Vegetariana', 39)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+            <img src="/_imagens/8.jfif" alt="Pizza Bacon e Cheddar">
+            <h2>Bacon e Cheddar</h2>
+            <div class="price">R$ 46,00</div>
+            <p>Pizza com pedaços de bacon crocante e queijo cheddar derretido.</p>
+            <button onclick="adicionarCarrinho('Bacon e Cheddar', 46)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+            <img src="/_imagens/9.jfif" alt="Pizza Napolitana">
+            <h2>Napolitana</h2>
+            <div class="price">R$ 44,00</div>
+            <p>Molho de tomate fresco, queijo de búfala e manjericão.</p>
+            <button onclick="adicionarCarrinho('Napolitana', 44)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+            <img src="_imagens/10.jfif" alt="Pizza Frutos do Mar">
+            <h2>Frutos do Mar</h2>
+            <div class="price">R$ 55,00</div>
+            <p>Com mariscos, camarões e outros frutos do mar.</p>
+            <button onclick="adicionarCarrinho('Frutos do Mar', 55)">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Novos produtos adicionados -->
+        <div class="card">
+            <img src="/_imagens/pizza5.jpg" alt="Pizza Marguerita Especial">
+            <h2>Marguerita Especial</h2>
+            <div class="price">R$ 50,00</div>
+            <p>Pizza clássica com mussarela de búfala e molho pesto.</p>
+            <button onclick="adicionarCarrinho('Marguerita Especial', 50)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+            <img src="/_imagens/pizza1.jpg" alt="Pizza Carne Seca">
+            <h2>Carne Seca</h2>
+            <div class="price">R$ 48,00</div>
+            <p>Pizza com carne seca desfiada, queijo coalho e cebola roxa.</p>
+            <button onclick="adicionarCarrinho('Carne Seca', 48)">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <div id="carrinho" class="carrinho">
+        <h2>Carrinho de Compras</h2>
+        <ul id="itens-carrinho">
+            <!-- Itens do carrinho aparecerão aqui -->
+        </ul>
+        <p id="total">Total: R$ 0,00</p>
+    </div>
+    
+    <footer>
+        <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dpt_BR">
+            <img src="/_imagens/facebook-new.png">
+        </a>
+        <a href="https://www.instagram.com/">
+            <img src="/_imagens/instagram-new.png">
+        </a>
+        <div class="direitos">
+            <p>2010 - 2024 © Todos os direitos reservados.</p>
+        </div>
+        <a href="https://www.whatsapp.com/?lang=pt_BR">
+            <img src="./_imagens/whatsapp.png">
+        </a>
+        <a href="https://www.ifood.com.br/">
+            <img src="/_imagens/ifood-logo-01.png">
+        </a>
+    </footer>
+    <script src="/_js/script.js"></script>
+</body>
+</html>

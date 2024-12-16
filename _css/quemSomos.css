@@ -1,0 +1,131 @@
+.main {
+    grid-area: main; /* Define a área do grid como 'main' */
+    margin-left: 50vh; /* Adiciona margem à esquerda */
+    margin-top: 10vh; /* Adiciona margem no topo */
+    display: flex;
+    min-height: 80vh;
+}
+
+.main-content {
+    display: flex; /* Define o layout como flexbox */
+    align-items: flex-start; /* Alinha os itens no início verticalmente */
+    gap: 2vh; /* Define o espaçamento entre a imagem e o texto */
+}
+
+.text-content {
+    max-width: 35%; /* Define a largura máxima do texto */
+    margin-top: 4vh; /* Adiciona margem superior */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-content h1 {
+    font-size: 5.8vh; /* Define o tamanho da fonte do título */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+}
+
+.text-content h2 {
+    font-size: 4.8vh; /* Define o tamanho da fonte do subtítulo */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    text-decoration: underline; /* Adiciona sublinhado ao subtítulo */
+    margin-bottom: 2vh; /* Adiciona margem inferior */
+}
+
+.text-content p {
+    font-size: 1.8vh; /* Define o tamanho da fonte dos parágrafos */
+    margin-bottom: 2vh; /* Adiciona margem inferior */
+    line-height: 1.6; /* Define a altura da linha para melhorar a legibilidade */
+    color: #ffffff;
+}
+
+.image-content {
+    max-width: 50%; /* Define a largura máxima da imagem */
+    margin-top: 4vh; /* Adiciona margem superior */
+}
+
+.image-content img {
+    width: 60vh; /* Define a largura da imagem como 100% do container */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15vh 85vh 10vh;
+    grid-template-areas: "header" "main" "footer";
+}
+
+span {
+    color: rgb(212, 212, 80);
+    font-weight: bold;
+}
+
+
+body {
+    background-image: linear-gradient(180deg,#000000,#9E2A2A);
+    background-repeat: no-repeat;
+    font-family: 'Quattrocento', serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 1vh;
+    background-color:#000000;
+}
+header img {
+    border-radius: 50%;
+    width: 20vh;
+    z-index: 100;
+}
+
+header p {
+    font-size: 2vh;
+    margin-top: 10vh;
+    font-family: 'Quattrocento', serif;
+}
+
+header a{
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Quattrocento', serif;
+}
+header a:hover {
+    color: #ffd000;
+}
+
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+
+  }
+
+  footer img {
+    width: 5vh;
+    height: 5vh;
+}
+
+footer p {
+    margin-top: 3vh;
+    color: #ffff;
+    font-size: 1.5vh;
+}
+
+#ifood {
+    width: 7vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quattrocento', serif;
+}
+
+* {
+    transition: 0.2s all;
+  }

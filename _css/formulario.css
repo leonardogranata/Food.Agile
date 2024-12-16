@@ -1,0 +1,261 @@
+body {
+    font-family: 'Quattrocento', serif;
+    margin: 0;
+    padding: 0;
+    color: #023047
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/_imagens/pizzaFundo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/_imagens/pizzaFundo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 0.7vh;
+    padding: 4vh;
+    box-shadow: 1vh 1vh 4vh rgba(0, 0, 0, 0.4);
+    gap: 1vh;
+    width: 80%;
+    max-width: 60vh;
+    height: auto;
+}
+
+#formulario img {
+    width: 100%;
+    max-width: 42vh;
+    height: auto;
+}
+
+#titulo {
+    font-size: 4vh;
+    text-align: center;
+}
+
+#titulo h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 2.5vh;
+    color: #9e2a2a;
+}
+
+#formulario p {
+    display: inline-block;
+    font-size: 1.6vh;
+    color: #555;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+#formulario input {
+    padding: 1.5vh;
+    font-size: 1.6vh;
+    border: 0.1vh solid #ccc;
+    margin-bottom: 2vh;
+    margin-top: 0.5vh;
+    border-radius: 0.4vh;
+    transition: all linear 160ms;
+    outline: none;
+}
+
+#formulario input:focus {
+    border: 0.1vh solid #9e2a2a;
+}
+
+#formulario label {
+    font-size: 1.6vh;
+    font-weight: bold;
+    margin-bottom: 1vh;
+}
+
+#formulario a {
+    display: inline-block;
+    margin-bottom: 2vh;
+    font-size: 1.3vh;
+    color: #555;
+    transition: all linear 160ms;
+}
+
+#formulario a:hover {
+    color: #9e2a2a;
+}
+
+#btn {
+    background-color: #9e2a2a;
+    color: #fff;
+    font-size: 1.4vh;
+    font-weight: bold;
+    border: none;
+    transition: all linear 160ms;
+    cursor: pointer;
+    margin: 0;
+    padding: 1vh;
+    border-radius: 0.4vh;
+}
+
+#btn:hover {
+    transform: scale(1.05);
+    background-color: #c03636;
+}
+
+/* Responsividade */
+@media (max-width: 76.8vh) {
+    .page {
+        padding: 2vh;
+    }
+
+    #formulario {
+        width: 90%;
+        padding: 3vh;
+    }
+
+    #titulo {
+        font-size: 3vh;
+    }
+
+    #titulo h1 {
+        font-size: 2vh;
+    }
+
+    #formulario p {
+        font-size: 1.4vh;
+    }
+
+    #formulario input {
+        font-size: 1.2vh;
+        padding: 1vh;
+    }
+
+    #formulario label {
+        font-size: 1.2vh;
+    }
+
+    #btn {
+        font-size: 1.2vh;
+        padding: 0.8vh;
+    }
+}
+
+@media (max-width: 48vh) {
+    #titulo {
+        font-size: 2.5vh;
+    }
+
+    #titulo h1 {
+        font-size: 1.8vh;
+    }
+
+    #formulario p {
+        font-size: 1.2vh;
+    }
+
+    #formulario input {
+        font-size: 1vh;
+        padding: 0.8vh;
+    }
+
+    #formulario label {
+        font-size: 1vh;
+    }
+
+    #btn {
+        font-size: 1vh;
+        padding: 0.6vh;
+    }
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.1vh;
+    background-color:#000000;
+}
+header img {
+    border-radius: 50%;
+    width: 20vh;
+    z-index: 100;
+}
+
+header p {
+    font-size: 2vh;
+    margin-top: 10vh;
+    font-family: 'Quattrocento', serif;
+}
+
+header a{
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Quattrocento', serif; 
+}
+header a:hover {
+    color: #ffd000;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.1vh;
+    font-family: 'Quattrocento', serif;
+  }
+
+  footer img {
+    width: 5vh;
+    height: 5vh;
+    margin-top: 2.5vh;
+}
+
+footer p {
+    margin-top: 5vh;
+    color: #ffff;
+    font-size: 1.5vh;
+    margin-bottom: 5vh;
+}
+
+#ifood {
+    width: 7vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#observacoes {
+    width: 60vh;
+    height: 12vh;
+}
+
+::placeholder {
+    font-size: 1.5vh;
+}
+
+* {
+    transition: 0.2s all;
+  }
